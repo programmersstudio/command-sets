@@ -1,0 +1,20 @@
+sourceBasePath: https://raw.githubusercontent.com/programmersstudio/command-sets/develop/varargstest/
+commands:
+  varargsOnly:
+    sourcePath: varargs/varargs.js
+    description: varargs test command.
+    enableVarargs: true
+    varArgs: dataString
+    parameters:
+      - name: msg
+      - name: "..."
+  varargsWithOptional:
+    sourcePath: varargs/varargs2.js
+    description: varargs test command.
+    enableVarargs: true
+    varArgs: dataString
+    parameters:
+      - name: msg
+      - name: msg2
+        optional: true
+      - name: "..."
